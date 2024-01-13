@@ -1,0 +1,15 @@
+/Users/edwin/Desktop/projekt-c-.net-dt071G/bin/Debug/net8.0/projekt-c-.net-dt071G
+/Users/edwin/Desktop/projekt-c-.net-dt071G/bin/Debug/net8.0/projekt-c-.net-dt071G.deps.json
+/Users/edwin/Desktop/projekt-c-.net-dt071G/bin/Debug/net8.0/projekt-c-.net-dt071G.runtimeconfig.json
+/Users/edwin/Desktop/projekt-c-.net-dt071G/bin/Debug/net8.0/projekt-c-.net-dt071G.dll
+/Users/edwin/Desktop/projekt-c-.net-dt071G/bin/Debug/net8.0/projekt-c-.net-dt071G.pdb
+/Users/edwin/Desktop/projekt-c-.net-dt071G/obj/Debug/net8.0/projekt-c-.net-dt071G.GeneratedMSBuildEditorConfig.editorconfig
+/Users/edwin/Desktop/projekt-c-.net-dt071G/obj/Debug/net8.0/projekt-c-.net-dt071G.AssemblyInfoInputs.cache
+/Users/edwin/Desktop/projekt-c-.net-dt071G/obj/Debug/net8.0/projekt-c-.net-dt071G.AssemblyInfo.cs
+/Users/edwin/Desktop/projekt-c-.net-dt071G/obj/Debug/net8.0/projekt-c-.net-dt071G.csproj.CoreCompileInputs.cache
+/Users/edwin/Desktop/projekt-c-.net-dt071G/obj/Debug/net8.0/projekt-c-.net-dt071G.sourcelink.json
+/Users/edwin/Desktop/projekt-c-.net-dt071G/obj/Debug/net8.0/projekt-c-.net-dt071G.dll
+/Users/edwin/Desktop/projekt-c-.net-dt071G/obj/Debug/net8.0/refint/projekt-c-.net-dt071G.dll
+/Users/edwin/Desktop/projekt-c-.net-dt071G/obj/Debug/net8.0/projekt-c-.net-dt071G.pdb
+/Users/edwin/Desktop/projekt-c-.net-dt071G/obj/Debug/net8.0/projekt-c-.net-dt071G.genruntimeconfig.cache
+/Users/edwin/Desktop/projekt-c-.net-dt071G/obj/Debug/net8.0/ref/projekt-c-.net-dt071G.dll
