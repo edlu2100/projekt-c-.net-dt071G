@@ -14,7 +14,7 @@ namespace projekt_csharp_net_dt071G
 
             Console.WriteLine("\nSpelets Element:");
             Console.WriteLine("Boll: En liten boll som studsar fram och tillbaka på skärmen.");
-            Console.WriteLine("Racket: Två vertikala paddlar (representeras av symbolen |");
+            Console.WriteLine("Racket: Två vertikala paddlar (representeras av symbolen | )");
 
             Console.WriteLine("\nStart av Spelet:");
             Console.WriteLine("Bollen placeras i mitten av skärmen.");

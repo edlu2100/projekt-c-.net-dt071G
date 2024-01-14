@@ -10,6 +10,8 @@ namespace projekt_csharp_net_dt071G
         //Startar Pong-spelet med player1 och player2 som valts
         public static void StartGame(string player1, string player2)
         {
+            //Döljer cursor som ritar bollen
+            Console.CursorVisible = false;
             Console.Clear();
 
             //Planens utformning samt tecken
@@ -52,6 +54,11 @@ namespace projekt_csharp_net_dt071G
             int scoreboardX = fieldLength / 2 - 12;
             //Y-koordinat för poängtavlan
             int scoreboardY = fieldWidth + 3;
+
+            // Visa scoreboard från start
+            Console.SetCursorPosition(scoreboardX, scoreboardY);
+            Console.WriteLine($"{player1} - {leftPlayerPoints} | {rightPlayerPoints} - {player2}");
+
 
             while (true)
             {
@@ -122,7 +129,7 @@ namespace projekt_csharp_net_dt071G
                             ballY = fieldWidth / 2;
                             ballX = fieldLength / 2;
                             Console.SetCursorPosition(scoreboardX, scoreboardY);
-                            System.Console.WriteLine($"{leftPlayerPoints} | {rightPlayerPoints}");
+                            Console.WriteLine($"{player1} - {leftPlayerPoints} | {rightPlayerPoints} - {player2}");
 
                             //Gå till resultatet om höger spelare når 5 poäng
                             if (rightPlayerPoints == 5)
@@ -209,11 +216,13 @@ namespace projekt_csharp_net_dt071G
             //Skriver ut vem som vinner
             if (rightPlayerPoints == 5)
             {
-                Console.WriteLine($"{player2} vann!");
+                Console.WriteLine($"\nGrattis {player2}!" );
+                Console.WriteLine($"\nNi vann med " + rightPlayerPoints+ " / " + leftPlayerPoints);
             }
             else
             {
-                Console.WriteLine($"{player1} vann!");
+                Console.WriteLine($"\nGrattis {player1}!" );
+                Console.WriteLine($"\nNi vann med " + leftPlayerPoints+ " / " + rightPlayerPoints);
             }
 
             //Listar ut vem som vann
@@ -223,9 +232,9 @@ namespace projekt_csharp_net_dt071G
             //Uppdatera spelarnas poäng
             Players.UpdatePlayerScore(winner, true);
             Players.UpdatePlayerScore(loser, false);
-
+            
             //Vänta på tangenttryckning och gå tillbaka till spelmenyn
-            Console.WriteLine("Tryck på en tangent för att gå tillbaka till spelmenyn...");
+            Console.WriteLine("\nTryck på en tangent för att gå tillbaka till spelmenyn...");
             Console.ReadKey();
             Pong.Start();
         }

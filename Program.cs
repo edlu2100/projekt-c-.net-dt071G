@@ -29,8 +29,7 @@ namespace projekt_csharp_net_dt071G
                     //Undermeny för att välja ett spel
                     Console.Clear();
                     Console.WriteLine("1. Pong");
-                    Console.WriteLine("2. Hänga gubbe");
-                    Console.WriteLine("3. Fyra i rad");
+                    Console.WriteLine("2. Fyra i rad");
                     Console.WriteLine("X. Tillbaka");
 
                     //Läser in användarens tangenttryckning för spelmenyn
@@ -39,19 +38,27 @@ namespace projekt_csharp_net_dt071G
                     //Hanterar användarens val i spelmenyn
                     switch (game)
                     {
+                        //Pong-spelet som är skapat
                         case '1':
                             Pong.Start(); //Startar Pong-spelet
                             break;
+
+                        //Fyra i rad (finns inte men hade planer på att skapa)
                         case '2':
-                            // Lägg till logik för Hänga gubbe
+                            Console.Clear();
+                            Console.WriteLine("Under utveckling, kommer i framtiden...");
+                            //Tyck tangen för att gå till Main
+                            Console.WriteLine("\nTryck på en tangent för att gå tillbaka...");
+                            Console.ReadKey();
+                            Main();
                             break;
-                        case '3':
-                            // Lägg till logik för Fyra i rad
-                            break;
+
+                        //Starta om programmet om användaren väljer alternativet 'X'
                         case 88:
                             Console.Clear();
-                            Main(); // Starta om programmet om användaren väljer alternativet 'X'
+                            Main(); 
                             break;
+                        //om något annat än valen tycks i
                         default:
                             Console.Clear();
                             Console.WriteLine("Ogiltigt val. Försök igen.");
@@ -64,10 +71,12 @@ namespace projekt_csharp_net_dt071G
                 case '2':
                     Console.Clear();
                     int i = 0;
+                    //Loopar igenom spelare och skriver ut statistik
                     foreach (Player player in Players.GetPlayers())
                     {
-                        Console.WriteLine("[" + i++ + "] " + player.Name + " " + CalculateWinLossRatio(player.Wins, player.Loses));
+                        Console.WriteLine("[" + i++ + "] " + player.Name + ": " + CalculateWinLossRatio(player.Wins, player.Loses));
                     }
+                    //Går tillbaka vid knapptyckning
                     Console.WriteLine("Tryck på en tangent för att gå tillbaka...");
                     Console.ReadKey();
                     Console.Clear();
